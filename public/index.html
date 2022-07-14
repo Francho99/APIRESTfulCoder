@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Server</title>
+</head>
+<body>
+    <h2>Ingresa un producto</h2>
+    <form action="/api/productos" method="POST" >
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre">
+        <label for="precio">Precio</label>
+        <input type="number" name="precio">
+        <button>Enviar</button>
+    </form>
+    <b></b>
+    <h2>Queres sustituir o actualizar un producto?</h2>
+    <form action="/api/productos/:id" method="PUT">
+        <label for="id">ID</label>
+        <input type="number" name="id">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre">
+        <label for="precio">Precio</label>
+        <input type="number" name="precio">
+        <button>Enviar</button>
+    </form>
+    <h2>Eliminar un producto</h2>
+    <form action="/api/productos" method="DELETE">
+        <label for="id">ID</label>
+        <input type="number" name="id">
+        <button>Enviar</button>
+    </form>
+
+</body>
+</html>
